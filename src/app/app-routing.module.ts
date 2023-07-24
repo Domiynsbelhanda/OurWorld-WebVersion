@@ -26,8 +26,8 @@ import { NftCentricMetaverseLandingComponent } from './components/pages/single-p
 const routes: Routes = [
 
     // Multi-page
-    {path: '', component: MetavarseLaunchpadComponent},
-    {path: 'index-2', component: DexOfferingComponent},
+    {path: '', component: DexOfferingComponent},
+    {path: 'index-2', component: MetavarseLaunchpadComponent},
     {path: 'index-3', component: GamingMetaverseComponent},
     {path: 'index-4', component: NftCentricMetaverseComponent},
     {path: 'index-5', component: LandSellingPlatformComponent},
