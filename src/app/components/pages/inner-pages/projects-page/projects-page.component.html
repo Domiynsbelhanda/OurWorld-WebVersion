@@ -6,6 +6,11 @@
     <div class="container">
         <div class="projects-tabs">
             <ul class="nav-tabset">
+                <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab1'}">
+                    <span (click)="switchTab($event, 'tab1')">
+                        TOUS ({{length_modelisation}})
+                    </span>
+                </li>
                 <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab2'}">
                     <span (click)="switchTab($event, 'tab2')">
                         VIDEOGRAPHIE
@@ -18,7 +23,7 @@
                 </li>
                 <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab4'}">
                     <span (click)="switchTab($event, 'tab4')">
-                        3D ({{length_modelisation}})
+                        3D
                     </span>
                 </li>
                 <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab5'}">
@@ -33,34 +38,206 @@
                 </li>
             </ul>
             <div class="tabs-container">
-                <div class="pane" id="tab4" *ngIf="currentTab === 'tab4'">
+                <div class="pane" id="tab1" *ngIf="currentTab === 'tab1'">
                     <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6" *ngFor="let item of modelisation">
-                            <div class="single-next-project">
-                                <img src="{{item.image}}" alt="project-image">
-                                <div class="next-project-content">
-                                    <h3>{{item.name}}</h3>
-                                    <p>{{item.description}}</p>
-                                    <ul>
-                                        <li>
-                                            Technologie
-                                            <span>{{item.technologie}} <sub></sub></span>
-                                        </li>
-                                        <li>
-                                            Durée
-                                            <span>{{item.duree}} <sub></sub></span>
-                                        </li>
-                                        <li>
-                                            Client
-                                            <span>{{item.client}} <sub></sub></span>
-                                        </li>
-                                    </ul>
+                        <div class="col-lg-4 col-md-6" *ngFor="let item of modelisation | orderBy: 'name'">
+                            <div>
+                                <div class="single-next-project">
+                                    <img src="{{item.image}}" alt="project-image">
+                                    <div class="next-project-content">
+                                        <h3>{{item.name}}</h3>
+                                        <p>{{item.description}}</p>
+                                        <ul>
+                                            <li>
+                                                Type
+                                                <span>{{item.categorie}} <sub></sub></span>
+                                            </li>
+                                            <li>
+                                                Technologie
+                                                <span>{{item.technologie}} <sub></sub></span>
+                                            </li>
+                                            <li>
+                                                Durée
+                                                <span>{{item.duree}} <sub></sub></span>
+                                            </li>
+                                            <li>
+                                                Client
+                                                <span>{{item.client}} <sub></sub></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
                                 </div>
-                                <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="pane" id="tab2" *ngIf="currentTab === 'tab2'">
+                    <div class="row justify-content-center">
+                        <ng-container  *ngFor="let item of modelisation">
+                            <ng-container *ngIf="item.type == 'tab2'">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-next-project">
+                                        <img src="{{item.image}}" alt="project-image">
+                                        <div class="next-project-content">
+                                            <h3>{{item.name}}</h3>
+                                            <p>{{item.description}}</p>
+                                            <ul>
+                                                <li>
+                                                    Technologie
+                                                    <span>{{item.technologie}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Durée
+                                                    <span>{{item.duree}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Client
+                                                    <span>{{item.client}} <sub></sub></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="pane" id="tab3" *ngIf="currentTab === 'tab3'">
+                    <div class="row justify-content-center">
+                        <ng-container  *ngFor="let item of modelisation">
+                            <ng-container *ngIf="item.type == 'tab3'">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-next-project">
+                                        <img src="{{item.image}}" alt="project-image">
+                                        <div class="next-project-content">
+                                            <h3>{{item.name}}</h3>
+                                            <p>{{item.description}}</p>
+                                            <ul>
+                                                <li>
+                                                    Technologie
+                                                    <span>{{item.technologie}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Durée
+                                                    <span>{{item.duree}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Client
+                                                    <span>{{item.client}} <sub></sub></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="pane" id="tab4" *ngIf="currentTab === 'tab4'">
+                    <div class="row justify-content-center">
+                        <ng-container  *ngFor="let item of modelisation">
+                            <ng-container *ngIf="item.type == 'tab4'">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-next-project">
+                                        <img src="{{item.image}}" alt="project-image">
+                                        <div class="next-project-content">
+                                            <h3>{{item.name}}</h3>
+                                            <p>{{item.description}}</p>
+                                            <ul>
+                                                <li>
+                                                    Technologie
+                                                    <span>{{item.technologie}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Durée
+                                                    <span>{{item.duree}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Client
+                                                    <span>{{item.client}} <sub></sub></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="pane" id="tab5" *ngIf="currentTab === 'tab5'">
+                    <div class="row justify-content-center">
+                        <ng-container  *ngFor="let item of modelisation">
+                            <ng-container *ngIf="item.type == 'tab5'">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-next-project">
+                                        <img src="{{item.image}}" alt="project-image">
+                                        <div class="next-project-content">
+                                            <h3>{{item.name}}</h3>
+                                            <p>{{item.description}}</p>
+                                            <ul>
+                                                <li>
+                                                    Technologie
+                                                    <span>{{item.technologie}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Durée
+                                                    <span>{{item.duree}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Client
+                                                    <span>{{item.client}} <sub></sub></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="pane" id="tab6" *ngIf="currentTab === 'tab6'">
+                    <div class="row justify-content-center">
+                        <ng-container  *ngFor="let item of modelisation">
+                            <ng-container *ngIf="item.type == 'tab6'">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-next-project">
+                                        <img src="{{item.image}}" alt="project-image">
+                                        <div class="next-project-content">
+                                            <h3>{{item.name}}</h3>
+                                            <p>{{item.description}}</p>
+                                            <ul>
+                                                <li>
+                                                    Technologie
+                                                    <span>{{item.technologie}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Durée
+                                                    <span>{{item.duree}} <sub></sub></span>
+                                                </li>
+                                                <li>
+                                                    Client
+                                                    <span>{{item.client}} <sub></sub></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="{{item.link}}" target="_blank" class="read-more-btn">Voir Plus</a>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

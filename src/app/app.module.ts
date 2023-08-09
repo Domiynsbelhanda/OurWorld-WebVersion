@@ -51,6 +51,7 @@ import { ProjectDetailsPageComponent } from './components/pages/inner-pages/proj
 import { MultipageNavbarComponent } from './components/common/multipage-navbar/multipage-navbar.component';
 import { TeamPageComponent } from './components/pages/inner-pages/team-page/team-page.component';
 import { OnepageNavbarComponent } from './components/common/onepage-navbar/onepage-navbar.component';
+import { NgPipesModule } from 'ngx-pipes';
 
 @NgModule({
     declarations: [
@@ -106,6 +107,7 @@ import { OnepageNavbarComponent } from './components/common/onepage-navbar/onepa
         AppRoutingModule,
         CarouselModule,
         NgxScrollTopModule,
+        NgPipesModule,
         BrowserAnimationsModule
     ],
     providers: [],
