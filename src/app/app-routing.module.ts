@@ -30,7 +30,7 @@ const routes: Routes = [
     {path: 'index-2', component: MetavarseLaunchpadComponent},
     {path: 'index-3', component: GamingMetaverseComponent},
     {path: 'index-4', component: NftCentricMetaverseComponent},
-    {path: 'index-5', component: LandSellingPlatformComponent},
+    {path: 'campagne-honorable', component: LandSellingPlatformComponent},
 
     // Single Page
     {path: 'metavarse-launchpad', component: MetavarseLaunchpadLandingComponent},
