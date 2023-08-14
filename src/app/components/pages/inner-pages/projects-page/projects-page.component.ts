@@ -90,6 +90,71 @@ export class ProjectsPageComponent implements OnInit {
                 type: "tab6",
                 categorie: "Communication"
             },
+
+            {
+                name: "Shisha Nyama 2K22",
+                description: "SHISHA Nyama est un evénement annuel organisé par OZA WAPi réunissant la population de la ville de Lubumbashi.",
+                link: "https://www.instagram.com/p/Cg_d2B6jYvB/",
+                image : "assets/images/next-project/shisha-nyama-2k22.png",
+                technologie : "Communication - Graphisme",
+                duree : "Immédiat",
+                client: "OZA WAPI",
+                uid: "shisha-nyama-2k22",
+                type: "tab3",
+                categorie: "Graphisme"
+            },
+
+            {
+                name: "Afrihopes Website",
+                description: "Afrihopes Global D.R.C est une entreprise qui offre des services variés tels que la facilitation pour l'obtention de visa, la logistique, l'import-export.",
+                link: "https://wwww.afrihopes.com",
+                image : "assets/images/next-project/afrihopes-global.png",
+                technologie : "Programmation - Communication",
+                duree : "2 Semaines",
+                client: "Afrihopes Global DRC",
+                uid: "afrihopes-global",
+                type: "tab5",
+                categorie: "Programmation"
+            },
+
+            {
+                name: "TITANIC 2023",
+                description: "TITANIC est un evénement annuel organisé par Cinho Event ayant pour but la promotion culturelle de la ville de Lubumbashi.",
+                link: "https://www.instagram.com/p/CgCtzs9DHDL/",
+                image : "assets/images/next-project/titanic-event-2023.png",
+                technologie : "Communication - Graphisme",
+                duree : "Immédiat",
+                client: "Cinho Event",
+                uid: "titanic-event-2023",
+                type: "tab6",
+                categorie: "Communication"
+            },
+
+            {
+                name: "ESIS Inscription 2022-2023",
+                description: "Campagne d'inscription des nouveaux étudiants pour la licence et le master.",
+                link: "https://web.facebook.com/703976019787320/photos/pb.100064531795188.-2207520000./2028169477367961/?type=3",
+                image : "assets/images/next-project/esis-salama-2022.png",
+                technologie : "Communication - Graphisme",
+                duree : "Immédiat",
+                client: "ESIS Salama",
+                uid: "esis-salama-2022",
+                type: "tab3",
+                categorie: "Graphisme"
+            },
+
+            {
+                name: "Le Sommet",
+                description: "Le sommet est un programme d'accompagnement et de financement des jeunes entrepreneurs congolais.",
+                link: "https://www.instagram.com/p/CucjWe7IG8l/",
+                image : "assets/images/next-project/le-parrain-sommet.png",
+                technologie : "Communication - Graphisme",
+                duree : "Immédiat",
+                client: "Le Parrain",
+                uid: "le-parrain-sommet",
+                type: "tab3",
+                categorie: "Graphisme"
+            },
         ];
 
         this.length_modelisation = this.modelisation.length;

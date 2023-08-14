@@ -29,14 +29,14 @@ const routes: Routes = [
     {path: '', component: DexOfferingComponent},
     {path: 'index-2', component: MetavarseLaunchpadComponent},
     {path: 'index-3', component: GamingMetaverseComponent},
-    {path: 'online-formation', component: NftCentricMetaverseComponent},
+    {path: 'index-4', component: NftCentricMetaverseComponent},
     {path: 'campagne-honorable', component: LandSellingPlatformComponent},
 
     // Single Page
     {path: 'metavarse-launchpad', component: MetavarseLaunchpadLandingComponent},
     {path: 'dex-offering', component: DexOfferingLandingComponent},
     {path: 'gaming-metaverse', component: GamingMetaverseLandingComponent},
-    {path: 'nft-centric-metaverse', component: NftCentricMetaverseLandingComponent},
+    {path: 'online-formation', component: NftCentricMetaverseLandingComponent},
     {path: 'land-selling-platform', component: LandSellingPlatformLandingComponent},
 
     // Inner Pages
