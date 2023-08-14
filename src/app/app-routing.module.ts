@@ -29,7 +29,7 @@ const routes: Routes = [
     {path: '', component: DexOfferingComponent},
     {path: 'index-2', component: MetavarseLaunchpadComponent},
     {path: 'index-3', component: GamingMetaverseComponent},
-    {path: 'index-4', component: NftCentricMetaverseComponent},
+    {path: 'online-formation', component: NftCentricMetaverseComponent},
     {path: 'campagne-honorable', component: LandSellingPlatformComponent},
 
     // Single Page
