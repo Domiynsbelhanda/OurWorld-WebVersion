@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyB4Zsz0b8bAj0NJ6Eo10-kJCprGYfbeBv4",
+    authDomain: "lynxtechnology.firebaseapp.com",
+    databaseURL: "https://lynxtechnology.firebaseio.com",
+    projectId: "lynxtechnology",
+    storageBucket: "lynxtechnology.appspot.com",
+    messagingSenderId: "901218664155",
+    appId: "1:901218664155:web:a9f0e7878a418d62b096fe"
+  }
 };
 
 /*

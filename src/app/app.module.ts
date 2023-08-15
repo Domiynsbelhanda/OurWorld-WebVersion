@@ -52,6 +52,9 @@ import { MultipageNavbarComponent } from './components/common/multipage-navbar/m
 import { TeamPageComponent } from './components/pages/inner-pages/team-page/team-page.component';
 import { OnepageNavbarComponent } from './components/common/onepage-navbar/onepage-navbar.component';
 import { NgPipesModule } from 'ngx-pipes';
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
     declarations: [
@@ -108,7 +111,9 @@ import { NgPipesModule } from 'ngx-pipes';
         CarouselModule,
         NgxScrollTopModule,
         NgPipesModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        // AngularFireModule.initializeApp(environment.firebaseConfig),
+        // AngularFireDatabaseModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
