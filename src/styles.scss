@@ -135,6 +135,102 @@ p {
 		transition: var(--transition);
 		background: linear-gradient(98.28deg, #FDCE39 2.11%, #FD8963 30.92%, #ED5174 97.49%);
 	}
+	&.btn-facebook {
+		&::before {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(1);
+			transition: var(--transition);
+			background: #4b00d4;
+		}
+		&::after {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(0);
+			transition: var(--transition);
+			background: #300088;
+		}
+		&:hover {
+			&::after {
+				transform: scaleX(1);
+				background: #772dff;
+			}
+		}
+	}
+	&.btn-youtube {
+		&::before {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(1);
+			transition: var(--transition);
+			background: #ff2d2d;
+		}
+		&::after {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(0);
+			transition: var(--transition);
+			background: #d40000;
+		}
+		&:hover {
+			&::after {
+				transform: scaleX(1);
+				background: #880000;
+			}
+		}
+	}
+	&.btn-linkedin {
+		&::before {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(1);
+			transition: var(--transition);
+			background: #4c00ff;
+		}
+		&::after {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(0);
+			transition: var(--transition);
+			background: #0004d4;
+		}
+		&:hover {
+			&::after {
+				transform: scaleX(1);
+				background: #0e0088;
+			}
+		}
+	}
 	&.btn-active {
 		&::before {
 			top: 0;
@@ -147,6 +243,38 @@ p {
 			transform: scaleX(1);
 			transition: var(--transition);
 			background: linear-gradient(98.28deg, #FDCE39 2.11%, #FD8963 30.92%, #ED5174 97.49%);
+		}
+		&::after {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(0);
+			transition: var(--transition);
+			background: linear-gradient(135deg, #FA26CA 0%, #712AF9 100%);
+		}
+		&:hover {
+			&::after {
+				transform: scaleX(1);
+				background: linear-gradient(135deg, #FA26CA 0%, #712AF9 100%);
+			}
+		}
+	}
+	&.btn-navbar {
+		&::before {
+			top: 0;
+			right: 0;
+			content: "";
+			width: 100%;
+			z-index: -1;
+			height: 100%;
+			position: absolute;
+			transform: scaleX(1);
+			transition: var(--transition);
+			background: linear-gradient(98.28deg, #FDCE39 2.11%, #FD8963 30.92%);
 		}
 		&::after {
 			top: 0;
