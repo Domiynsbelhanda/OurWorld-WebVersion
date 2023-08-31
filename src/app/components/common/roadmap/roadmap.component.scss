@@ -1,7 +1,7 @@
 .roadmap-area {
 	position: relative;
 	z-index: 1;
-    
+
 	.shape {
 		z-index: -1;
 		opacity: 0.6;
@@ -25,7 +25,7 @@
 	padding: 25px;
 
 	.date {
-		background: linear-gradient(135deg, #FA26CA 0%, #712AF9 100%);
+		background: linear-gradient(180deg, #FDCE39 0%, #FD8963 30.21%, #ED5174 100%);
 		backdrop-filter: blur(134px);
 		display: inline-block;
 		margin-bottom: 20px;
@@ -36,6 +36,7 @@
 		span {
 			font-weight: 600;
 			color: var(--whiteColor);
+            font-size: 20px;
 		}
 		h2 {
 			margin-bottom: 0;
@@ -83,11 +84,11 @@
     }
     .single-roadmap {
         padding: 15px;
-    
+
         .date {
             border-radius: 20px;
             padding: 15px 20px;
-    
+
             h2 {
                 font-size: 22px;
             }
@@ -96,7 +97,7 @@
             li {
                 margin-bottom: 13px;
                 padding-left: 16px;
-    
+
                 &::before {
                     top: 3px;
                 }
@@ -127,10 +128,10 @@
     }
     .single-roadmap {
         padding: 20px;
-    
+
         .date {
             padding: 20px 25px;
-    
+
             h2 {
                 font-size: 25px;
             }
@@ -156,7 +157,7 @@
     }
     .single-roadmap {
         padding: 20px;
-    
+
         ul {
             li {
                 &::before {

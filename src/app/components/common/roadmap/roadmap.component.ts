@@ -21,8 +21,8 @@ export class RoadmapComponent implements OnInit {
 		smartSpeed: 1000,
 		autoplayHoverPause: true,
 		navText: [
-			"Past <i class='ri-arrow-left-s-line'></i>",
-			"Future <i class='ri-arrow-right-s-line'></i>",
+			"PACK PRECEDENT <i class='ri-arrow-left-s-line'></i>",
+			"PACK SUIVANT <i class='ri-arrow-right-s-line'></i>",
 		],
 		responsive: {
 			0: {
