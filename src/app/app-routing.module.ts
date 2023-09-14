@@ -45,7 +45,7 @@ const routes: Routes = [
     {path: 'features', component: FeaturesPageComponent},
     {path: 'feature-details', component: FeatureDetailsPageComponent},
     {path: 'projects', component: ProjectsPageComponent},
-    {path: 'project-details', component: ProjectDetailsPageComponent},
+    // {path: 'project-details', component: ProjectDetailsPageComponent},
     {path: 'blog', component: BlogPageComponent},
     // {path: 'blog-details', component: BlogDetailsPageComponent},
     // {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
