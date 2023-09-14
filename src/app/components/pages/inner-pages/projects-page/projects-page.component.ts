@@ -132,7 +132,7 @@ export class ProjectsPageComponent implements OnInit {
             },
 
             {
-                name: "ESIS Inscription 2022-2023",
+                name: "ESIS Inscription 2022-2023 - Graphisme",
                 description: "Campagne d'inscription des nouveaux étudiants pour la licence et le master.",
                 link: "https://web.facebook.com/703976019787320/photos/pb.100064531795188.-2207520000./2028169477367961/?type=3",
                 image: "assets/images/next-project/esis-salama-2022.png",
@@ -141,6 +141,19 @@ export class ProjectsPageComponent implements OnInit {
                 client: "ESIS Salama",
                 uid: "esis-salama-2022",
                 type: "tab3",
+                categorie: "Graphisme"
+            },
+
+            {
+                name: "ESIS Inscription 2022-2023",
+                description: "Vidéo de la campagne d'inscription des nouveaux étudiants pour la licence et le master.",
+                link: "https://youtu.be/H-XwxY06Bqs",
+                image: "assets/images/next-project/esis-salama-2022.png",
+                technologie: "Communication - Graphisme",
+                duree: "Immédiat",
+                client: "ESIS Salama",
+                uid: "esis-salama-2022",
+                type: "tab2",
                 categorie: "Graphisme"
             },
 
@@ -210,7 +223,7 @@ export class ProjectsPageComponent implements OnInit {
             },
 
             {
-                name: "Browskin 02",
+                name: "A Browskin 02",
                 description: "photographie1",
                 link: "https://www.instagram.com/p/CAD6yVsDio8/",
                 image: "assets/images/next-project/photographie-2.png",
@@ -234,6 +247,46 @@ export class ProjectsPageComponent implements OnInit {
                 type: "tab8",
                 categorie: "Photographie"
             },
+
+            {
+                name: "ESIS Inscription 2020-2021",
+                description: "Publicité sur la campagne d'inscription de l'Ecole Supérieure d'Informatique Salama.",
+                link: "https://youtu.be/A01G452EShg",
+                image: "assets/images/next-project/esis-salama-2020.png",
+                technologie: "Caméra - After Effect - Premiere Pro",
+                duree: "1 semaine",
+                client: "ESIS Salama",
+                uid: "esis-salama-2020-2021",
+                type: "tab2",
+                categorie: "Vidéographie"
+            },
+
+            {
+                name: "Appel Candidature ESIS 2020-2021",
+                description: "Vidéo d'annonce pour l'appel à la candidature des nouveaux étudiants désirant réjoindre l'Esis Salama",
+                link: "https://youtu.be/lJ2E2VTPZRw",
+                image: "assets/images/next-project/appel-esis-salama-2020.png",
+                technologie: "Caméra - After Effect - Premiere Pro",
+                duree: "1 semaine",
+                client: "ESIS Salama",
+                uid: "esis-salama-2020-2021",
+                type: "tab2",
+                categorie: "Vidéographie"
+            },
+
+            {
+                name: "ESIS Inscription 2021-2022",
+                description: "Vidéo d'annonce pour l'appel à la candidature des nouveaux étudiants désirant réjoindre l'Esis Salama",
+                link: "https://youtu.be/JFCEysQ5Mko",
+                image: "assets/images/next-project/esis-salama-2021.png",
+                technologie: "Caméra - After Effect - Premiere Pro",
+                duree: "1 semaine",
+                client: "ESIS Salama",
+                uid: "esis-salama-2020-2021",
+                type: "tab2",
+                categorie: "Vidéographie"
+            },
+
         ];
 
         this.length_modelisation = this.modelisation.length;

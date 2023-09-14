@@ -27,17 +27,17 @@ const routes: Routes = [
 
     // Multi-page
     {path: '', component: DexOfferingComponent},
-    {path: 'index-2', component: MetavarseLaunchpadComponent},
-    {path: 'index-3', component: GamingMetaverseComponent},
-    {path: 'index-4', component: NftCentricMetaverseComponent},
+    // {path: 'index-2', component: MetavarseLaunchpadComponent},
+    // {path: 'index-3', component: GamingMetaverseComponent},
+    // {path: 'index-4', component: NftCentricMetaverseComponent},
     {path: 'campagne-honorable', component: LandSellingPlatformComponent},
 
     // Single Page
-    {path: 'metavarse-launchpad', component: MetavarseLaunchpadLandingComponent},
-    {path: 'dex-offering', component: DexOfferingLandingComponent},
-    {path: 'gaming-metaverse', component: GamingMetaverseLandingComponent},
-    {path: 'online-formation', component: NftCentricMetaverseLandingComponent},
-    {path: 'land-selling-platform', component: LandSellingPlatformLandingComponent},
+    // {path: 'metavarse-launchpad', component: MetavarseLaunchpadLandingComponent},
+    // {path: 'dex-offering', component: DexOfferingLandingComponent},
+    // {path: 'gaming-metaverse', component: GamingMetaverseLandingComponent},
+    // {path: 'online-formation', component: NftCentricMetaverseLandingComponent},
+    // {path: 'land-selling-platform', component: LandSellingPlatformLandingComponent},
 
     // Inner Pages
     {path: 'about-us', component: AboutPageComponent},
@@ -47,9 +47,9 @@ const routes: Routes = [
     {path: 'projects', component: ProjectsPageComponent},
     {path: 'project-details', component: ProjectDetailsPageComponent},
     {path: 'blog', component: BlogPageComponent},
-    {path: 'blog-details', component: BlogDetailsPageComponent},
-    {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
-    {path: 'terms-conditions', component: TermsConditionsPageComponent},
+    // {path: 'blog-details', component: BlogDetailsPageComponent},
+    // {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
+    // {path: 'terms-conditions', component: TermsConditionsPageComponent},
     {path: 'contact-us', component: ContactPageComponent},
     // Here add new pages component
 
